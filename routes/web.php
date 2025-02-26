@@ -13,6 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+   return view ('welcome');
+});
+
+Route::get('hello', function () {
+    return ('Hello World');
+ });
+
+Route::get('/world', function () {
+    return ('World');
+});
+
+Route::get('/', function () {
+    return ('Welcome');
+});
+
+Route::get('/about/name', function () {
+    return ('Hello my Name is Azkiya, and my nim is 2341760175');
+});
+
+Route::get('/user/{name}/{nim}', function ($name,$nim) {
+    return ('My name is '.$name.' and my student number is '.$nim);
 });
