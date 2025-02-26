@@ -40,3 +40,17 @@ Route::get('/about/name', function () {
 Route::get('/user/{name}/{nim}', function ($name,$nim) {
     return ('My name is '.$name.' and my student number is '.$nim);
 });
+
+Route::get('/user/{Azkiya}', function ($name) { 
+    return 'My name is '.$name; 
+}); 
+
+Route::get('/posts/{post}/comments/{comment}', function 
+($postId, $commentId) { 
+    return 'Pos ke-'.$postId." Komentar ke-: ".$commentId; 
+});
+
+Route::get('/articles/{id}', function 
+($id) { 
+    return 'Halaman Artikel dengan ID '.$id; 
+});
