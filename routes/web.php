@@ -20,4 +20,10 @@ use App\Http\Controllers\PhotoController;
 |
 */
 
-Route::resource('photos', PhotoController::class);
+// Route::resource('photos', PhotoController::class);
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Azkiya']);
+// });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
